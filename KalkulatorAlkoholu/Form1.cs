@@ -51,5 +51,10 @@ namespace KalkulatorAlkoholu
         private void loadGlasswareData() { 
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
