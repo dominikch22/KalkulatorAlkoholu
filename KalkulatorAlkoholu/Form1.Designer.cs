@@ -39,6 +39,7 @@ namespace KalkulatorAlkoholu
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // alkoholComboBox
@@ -139,12 +140,23 @@ namespace KalkulatorAlkoholu
             this.label2.TabIndex = 14;
             this.label2.Text = "Total capacity:";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label4.Location = new System.Drawing.Point(298, 69);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(27, 16);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "(%)";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(332, 353);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -174,6 +186,7 @@ namespace KalkulatorAlkoholu
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
     }
 }
 
