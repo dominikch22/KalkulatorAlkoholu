@@ -1,0 +1,44 @@
+{
+	"glassware": [
+		{
+			"name": "Kieliszek do wódki",
+			"capacity_in_ml": 40
+		},
+		{
+			"name": "Kufel do piwa",
+			"capacity_in_ml": 750
+		},
+		{
+			"name": "Kieliszek do whisky",
+			"capacity_in_ml": 45
+		},
+		{
+			"name": "Kieliszek do koniaku",
+			"capacity_in_ml": 125
+		},
+		{
+			"name": "Kieliszek do wina czerwonego",
+			"capacity_in_ml": 200
+		},
+		{
+			"name": "Kieliszek do wina bia³ego",
+			"capacity_in_ml": 175
+		},
+		{
+			"name": "Kieliszek do szampana",
+			"capacity_in_ml": 175
+		},
+		{
+			"name": "Szklanka do drinków",
+			"capacity_in_ml": 300
+		},
+		{
+			"name": "Kubek do piwa rzemieœlniczego",
+			"capacity_in_ml": "500
+		},
+		{
+			"name": "Kieliszek do likieru",
+			"capacity_in_ml": "45
+		}
+	]
+}

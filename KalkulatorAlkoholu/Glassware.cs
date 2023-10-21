@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace KalkulatorAlkoholu
 {
-    class Drink
+    class Glassware
     {
-        public Drink(String name, double alcoholPercentageContent) {
+        public Glassware(String name, double capacityInMl) {
             this.Name = name;
-            this.AlcoholPercentageContent = alcoholPercentageContent;
+            this.CapacityInMl = capacityInMl;
         }
         public String Name
         { get; private set; }
 
-        public double AlcoholPercentageContent
+        public double CapacityInMl
         { get; private set; }
     }
 }

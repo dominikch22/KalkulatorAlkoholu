@@ -1,0 +1,80 @@
+{
+  "drinks": [
+    {
+      "name": "Piwo jasne",
+      "alcohol_percentage_content": 5
+    },
+    {
+      "name": "Piwo ciemne",
+      "alcohol_percentage_content": 6
+    },
+    {
+      "name": "Piwo mocne",
+      "alcohol_percentage_content": 10
+    },
+    {
+      "name": "Wino czerwone",
+      "alcohol_percentage_content": 14
+    },
+    {
+      "name": "Wino bia³e",
+      "alcohol_percentage_content": 13
+    },
+    {
+      "name": "Wino ró¿owe",
+      "alcohol_percentage_content": 12
+    },
+    {
+      "name": "Wino musuj¹ce",
+      "alcohol_percentage_content": 12
+    },
+    {
+      "name": "Wódka",
+      "alcohol_percentage_content": 45
+    },
+    {
+      "name": "Whisky (bourbon)",
+      "alcohol_percentage_content": 45
+    },
+    {
+      "name": "Whisky (scotch)",
+      "alcohol_percentage_content": 50
+    },
+    {
+      "name": "Irish whiskey",
+      "alcohol_percentage_content": 50
+    },
+    {
+      "name": "Rum",
+      "alcohol_percentage_content": 50
+    },
+    {
+      "name": "Tequila",
+      "alcohol_percentage_content": 39
+    },
+    {
+      "name": "Gin",
+      "alcohol_percentage_content": 44
+    },
+    {
+      "name": "Likier owocowy",
+      "alcohol_percentage_content": 23
+    },
+    {
+      "name": "Likier kawowy",
+      "alcohol_percentage_content": 23
+    },
+    {
+      "name": "Likier kremowy",
+      "alcohol_percentage_content": 18
+    },
+    {
+      "name": "Koniak (Cognac)",
+      "alcohol_percentage_content": 43
+    },
+    {
+      "name": "Brandy",
+      "alcohol_percentage_content": 48
+    }
+  ]
+}
