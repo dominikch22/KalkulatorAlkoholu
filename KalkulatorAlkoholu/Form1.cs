@@ -50,6 +50,7 @@ namespace KalkulatorAlkoholu
 
         private void loadGlasswareData() { 
             //nwm
+            //pejek walikuta
         }
 
         private void Form1_Load(object sender, EventArgs e)
