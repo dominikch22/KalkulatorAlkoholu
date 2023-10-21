@@ -100,7 +100,7 @@ namespace KalkulatorAlkoholu
            
             
 
-            return (percentage/100)*capacity*2;
+            return (percentage/100)*capacity*glasswareAmount;
         }
 
         private void Form1_Load(object sender, EventArgs e)
