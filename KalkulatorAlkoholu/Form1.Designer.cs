@@ -66,9 +66,9 @@ namespace KalkulatorAlkoholu
             this.label1.Font = new System.Drawing.Font("Segoe Print", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.Location = new System.Drawing.Point(31, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(237, 23);
+            this.label1.Size = new System.Drawing.Size(241, 23);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Type of alkohol or caston percent:";
+            this.label1.Text = "Type of alkohol or custom percent:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // alkoholScoreTextBox
