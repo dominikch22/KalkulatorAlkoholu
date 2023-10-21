@@ -48,7 +48,63 @@ namespace KalkulatorAlkoholu
 
         }
 
-        private void loadGlasswareData() { 
+        private void loadGlasswareData() {
+            Glassware = new Dictionary<string, Glassware>();
+
+            Glassware.Add("Kieliszek do wódki", new Glassware("Kieliszek do wódki", 40));
+            Glassware.Add("Kufel do piwa", new Glassware("Kufel do piwa", 750));
+            Glassware.Add("Kieliszek do whisky", new Glassware("Kieliszek do whisky", 45));
+            Glassware.Add("Kieliszek do koniaku", new Glassware("Kieliszek do koniaku", 125));
+            Glassware.Add("Kieliszek do wina czerwonego", new Glassware("Kieliszek do wina czerwonego", 200));
+            Glassware.Add("Kieliszek do wina białego", new Glassware("Kieliszek do wina białego", 175));
+            Glassware.Add("Kieliszek do szampana", new Glassware("Kieliszek do szampana", 175));
+            Glassware.Add("Szklanka do drinków", new Glassware("Szklanka do drinków", 300));
+            Glassware.Add("Kubek do piwa rzemieślniczego", new Glassware("Kubek do piwa rzemieślniczego", 500));
+            Glassware.Add("Kieliszek do likieru", new Glassware("Kieliszek do likieru", 45));
+
+        }
+
+        private double calculateAlcoholContent(String alcoholType, String glasswareType, int glasswareAmount) {
+            double percentage = 0;
+            double capacity = 0;
+
+
+            if (Drinks.TryGetValue(alcoholType, out Drink drink))
+            {
+                percentage = drink.AlcoholPercentageContent;
+            }
+            else {
+                try
+                {
+                    percentage = Convert.ToDouble(alcoholType);
+                }
+                catch
+                {
+                }
+
+            }
+
+            if (Glassware.TryGetValue("glasswareType", out Glassware glassware))
+            {
+                capacity = glassware.CapacityInMl;
+            }
+            else {
+                try
+                {
+                    capacity = Convert.ToDouble(glasswareType);
+                }
+                catch
+                {
+                }
+            }
+           
+            
+
+            return (percentage/100)*capacity*2;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
         }
     }
