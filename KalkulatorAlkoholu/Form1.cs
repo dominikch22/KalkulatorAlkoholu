@@ -26,24 +26,24 @@ namespace KalkulatorAlkoholu
         private void loadDrinksData() {
             Drinks = new Dictionary<string, Drink>();
 
-            Drinks.Add("Piwo jasne", new Drink("Piwo jasne", 5));
-            Drinks.Add("Piwo ciemne", new Drink("Piwo ciemne", 6));
-            Drinks.Add("Piwo mocne", new Drink("Piwo mocne", 10));
-            Drinks.Add("Wino czerwone", new Drink("Wino czerwone", 14));
-            Drinks.Add("Wino białe", new Drink("Wino białe", 13));
-            Drinks.Add("Wino różowe", new Drink("Wino różowe", 12));
-            Drinks.Add("Wino musujące", new Drink("Wino musujące", 12));
-            Drinks.Add("Wódka", new Drink("Wódka", 45));
-            Drinks.Add("Whisky (bourbon)", new Drink("Whisky (bourbon)", 45));
-            Drinks.Add("Whisky (scotch)", new Drink("Whisky (scotch)", 50));
-            Drinks.Add("Irish whiskey", new Drink("Irish whiskey", 50));
+            Drinks.Add("Light Beer", new Drink("Light Beer", 5));
+            Drinks.Add("Dark Beer", new Drink("Dark Beer", 6));
+            Drinks.Add("Strong Beer", new Drink("Strong Beer", 10));
+            Drinks.Add("Red Wine", new Drink("Red Wine", 14));
+            Drinks.Add("White Wine", new Drink("White Wine", 13));
+            Drinks.Add("Rosé Wine", new Drink("Rosé Wine", 12));
+            Drinks.Add("Sparkling Wine", new Drink("Sparkling Wine", 12));
+            Drinks.Add("Vodka", new Drink("Vodka", 45));
+            Drinks.Add("Bourbon Whiskey", new Drink("Bourbon Whiskey", 45));
+            Drinks.Add("Scotch Whisky", new Drink("Scotch Whisky", 50));
+            Drinks.Add("Irish Whiskey", new Drink("Irish Whiskey", 50));
             Drinks.Add("Rum", new Drink("Rum", 50));
             Drinks.Add("Tequila", new Drink("Tequila", 39));
             Drinks.Add("Gin", new Drink("Gin", 44));
-            Drinks.Add("Likier owocowy", new Drink("Likier owocowy", 23));
-            Drinks.Add("Likier kawowy", new Drink("Likier kawowy", 23));
-            Drinks.Add("Likier kremowy", new Drink("Likier kremowy", 18));
-            Drinks.Add("Koniak (Cognac)", new Drink("Koniak (Cognac)", 43));
+            Drinks.Add("Fruit Liqueur", new Drink("Fruit Liqueur", 23));
+            Drinks.Add("Coffee Liqueur", new Drink("Coffee Liqueur", 23));
+            Drinks.Add("Cream Liqueur", new Drink("Cream Liqueur", 18));
+            Drinks.Add("Cognac", new Drink("Cognac", 43));
             Drinks.Add("Brandy", new Drink("Brandy", 48));
 
         }
@@ -51,16 +51,16 @@ namespace KalkulatorAlkoholu
         private void loadGlasswareData() {
             Glassware = new Dictionary<string, Glassware>();
 
-            Glassware.Add("Kieliszek do wódki", new Glassware("Kieliszek do wódki", 40));
-            Glassware.Add("Kufel do piwa", new Glassware("Kufel do piwa", 750));
-            Glassware.Add("Kieliszek do whisky", new Glassware("Kieliszek do whisky", 45));
-            Glassware.Add("Kieliszek do koniaku", new Glassware("Kieliszek do koniaku", 125));
-            Glassware.Add("Kieliszek do wina czerwonego", new Glassware("Kieliszek do wina czerwonego", 200));
-            Glassware.Add("Kieliszek do wina białego", new Glassware("Kieliszek do wina białego", 175));
-            Glassware.Add("Kieliszek do szampana", new Glassware("Kieliszek do szampana", 175));
-            Glassware.Add("Szklanka do drinków", new Glassware("Szklanka do drinków", 300));
-            Glassware.Add("Kubek do piwa rzemieślniczego", new Glassware("Kubek do piwa rzemieślniczego", 500));
-            Glassware.Add("Kieliszek do likieru", new Glassware("Kieliszek do likieru", 45));
+            Glassware.Add("Vodka Shot Glass", new Glassware("Vodka Shot Glass", 40));
+            Glassware.Add("Beer Mug", new Glassware("Beer Mug", 750));
+            Glassware.Add("Whiskey Glass", new Glassware("Whiskey Glass", 45));
+            Glassware.Add("Cognac Glass", new Glassware("Cognac Glass", 125));
+            Glassware.Add("Red Wine Glass", new Glassware("Red Wine Glass", 200));
+            Glassware.Add("White Wine Glass", new Glassware("White Wine Glass", 175));
+            Glassware.Add("Champagne Flute", new Glassware("Champagne Flute", 175));
+            Glassware.Add("Cocktail Glass", new Glassware("Cocktail Glass", 300));
+            Glassware.Add("Craft Beer Mug", new Glassware("Craft Beer Mug", 500));
+            Glassware.Add("Liqueur Glass", new Glassware("Liqueur Glass", 45));   
 
         }
 
