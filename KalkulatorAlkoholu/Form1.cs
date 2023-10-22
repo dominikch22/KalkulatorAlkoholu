@@ -71,8 +71,8 @@ namespace KalkulatorAlkoholu
             try
             {
                 
-                alkoholScoreTextBox.Text = AlcoholCalculator.calculateAlcoholContent(alkoholComboBox.Text, capacityComboBox.Text, 1).ToString();
-                capacityScoreTextBox.Text = AlcoholCalculator.calculateDrinkkVolume(capacityComboBox.Text, 1).ToString();
+                alkoholScoreTextBox.Text = AlcoholCalculator.calculateAlcoholContent(alkoholComboBox.Text, capacityComboBox.Text, "1").ToString();
+                capacityScoreTextBox.Text = AlcoholCalculator.calculateDrinkkVolume(capacityComboBox.Text, "1").ToString();
             }
             catch (Exception ex) {
             }

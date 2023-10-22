@@ -61,9 +61,23 @@ namespace KalkulatorAlkoholu
 
         }
 
-        public double calculateDrinkkVolume(String glasswareType, int glasswareAmount)
+    
+        public double calculateDrinkkVolume(String glasswareType, String glasswareNumber)
         {
             double capacity = 0;
+            int number = 0;
+            try
+            {
+                number = Convert.ToInt32(glasswareNumber);
+            }
+            catch
+            {
+                throw new Exception("Incorrect number of glassware");
+            }
+            if (number < 0)
+                throw new Exception("Incorrect number of glassware");
+
+
 
             if (Glassware.TryGetValue(glasswareType, out Glassware glassware))
             {
@@ -83,10 +97,10 @@ namespace KalkulatorAlkoholu
                     throw new Exception("Incorrect capacity");
             }
 
-            return capacity * glasswareAmount;
+            return capacity * number;
         }
 
-        public double calculateAlcoholContent(String alcoholType, String glasswareType, int glasswareAmount)
+        public double calculateAlcoholContent(String alcoholType, String glasswareType, String glasswareNumber)
         {
             double percentage = 0;
 
@@ -112,7 +126,7 @@ namespace KalkulatorAlkoholu
 
             }
 
-            return (percentage / 100) * calculateDrinkkVolume(glasswareType, glasswareAmount);
+            return (percentage / 100) * calculateDrinkkVolume(glasswareType, glasswareNumber);
         }
     }
 }
