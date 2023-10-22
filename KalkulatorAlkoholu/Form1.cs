@@ -14,8 +14,7 @@ namespace KalkulatorAlkoholu
 {
     public partial class Form1 : Form
     {
-        private Dictionary<String, Drink> Drinks;
-        private Dictionary<String, Glassware> Glassware;
+       
         public Form1()
         {
             InitializeComponent();        
