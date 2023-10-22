@@ -64,9 +64,32 @@ namespace KalkulatorAlkoholu
 
         }
 
+        private double calculateDrinkkVolume(String glasswareType, int glasswareAmount) {
+            double capacity = 0;
+
+            if (Glassware.TryGetValue("glasswareType", out Glassware glassware))
+            {
+                capacity = glassware.CapacityInMl;
+            }
+            else
+            {
+                try
+                {
+                    capacity = Convert.ToDouble(glasswareType);
+                }
+                catch
+                {
+                    throw new Exception("Incorrect capacity");
+                }
+                if (capacity < 0)
+                    throw new Exception("Incorrect capacity");
+            }
+
+            return capacity * glasswareAmount;
+        }
+
         private double calculateAlcoholContent(String alcoholType, String glasswareType, int glasswareAmount) {
             double percentage = 0;
-            double capacity = 0;
 
 
             if (Drinks.TryGetValue(alcoholType, out Drink drink))
@@ -80,27 +103,16 @@ namespace KalkulatorAlkoholu
                 }
                 catch
                 {
+                    throw new Exception("Incorrect percentage");
                 }
+                if(percentage < 0 )
+                    throw new Exception("Incorrect percentage");
+                if(percentage > 100)
+                    throw new Exception("Incorrect percentage");
 
-            }
+            }                    
 
-            if (Glassware.TryGetValue("glasswareType", out Glassware glassware))
-            {
-                capacity = glassware.CapacityInMl;
-            }
-            else {
-                try
-                {
-                    capacity = Convert.ToDouble(glasswareType);
-                }
-                catch
-                {
-                }
-            }
-           
-            
-
-            return (percentage/100)*capacity*glasswareAmount;
+            return (percentage/100)*calculateDrinkkVolume(glasswareType, glasswareAmount);
         }
 
         private void Form1_Load(object sender, EventArgs e)
