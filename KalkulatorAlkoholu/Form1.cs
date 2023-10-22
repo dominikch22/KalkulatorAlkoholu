@@ -15,10 +15,10 @@ namespace KalkulatorAlkoholu
     public partial class Form1 : Form
     {
         private AlcoholCalculator AlcoholCalculator;
-
         public Form1()
         {
             InitializeComponent();
+            
             AlcoholCalculator = new AlcoholCalculator();
 
             foreach (KeyValuePair<string, Drink> entry in AlcoholCalculator.Drinks)
@@ -37,7 +37,7 @@ namespace KalkulatorAlkoholu
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
+
         }
 
         private void alkoholComboBox_SelectedIndexChanged(object sender, EventArgs e) //alkoholComboBox (wybor alkoholu)
@@ -70,27 +70,45 @@ namespace KalkulatorAlkoholu
         {
             try
             {
-                
-                alkoholScoreTextBox.Text = AlcoholCalculator.calculateAlcoholContent(alkoholComboBox.Text, capacityComboBox.Text, "1").ToString();
-                capacityScoreTextBox.Text = AlcoholCalculator.calculateDrinkkVolume(capacityComboBox.Text, "1").ToString();
+                alkoholScoreTextBox.Text = AlcoholCalculator.calculateAlcoholContent(alkoholComboBox.Text, capacityComboBox.Text, glasswareTextBox.Text).ToString();
+                capacityScoreTextBox.Text = AlcoholCalculator.calculateDrinkkVolume(capacityComboBox.Text, glasswareTextBox.Text).ToString();
+                errorInfo.Text = "";
             }
-            catch (Exception ex) {
+            catch (Exception ex)
+            {
+                errorInfo.Text = ex.Message;
             }
         }
 
-        private void label1_Click(object sender, EventArgs e) {}
-
-        private void label4_Click(object sender, EventArgs e)
+        private void glasswareTextBox_TextChanged(object sender, EventArgs e) //glasswareTextBox ilosc szklanek
         {
 
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e){}
+
+        private void label4_Click(object sender, EventArgs e){}
+
+        private void label6_Click(object sender, EventArgs e){}
+
+        private void label3_Click(object sender, EventArgs e){}
+
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
         {
 
         }
