@@ -14,10 +14,22 @@ namespace KalkulatorAlkoholu
 {
     public partial class Form1 : Form
     {
-       
+        private AlcoholCalculator AlcoholCalculator;
+
         public Form1()
         {
-            InitializeComponent();        
+            InitializeComponent();
+            AlcoholCalculator = new AlcoholCalculator();
+
+            foreach (KeyValuePair<string, Drink> entry in AlcoholCalculator.Drinks)
+            {
+                alkoholComboBox.Items.Add(entry.Key);
+            }
+
+            foreach (KeyValuePair<string, Glassware> entry in AlcoholCalculator.Glassware)
+            {
+                capacityComboBox.Items.Add(entry.Key);
+            }
         }
 
        
@@ -25,7 +37,7 @@ namespace KalkulatorAlkoholu
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void alkoholComboBox_SelectedIndexChanged(object sender, EventArgs e) //alkoholComboBox (wybor alkoholu)
@@ -56,7 +68,14 @@ namespace KalkulatorAlkoholu
 
         private void calculateButton_Click(object sender, EventArgs e) //calculateButton (oblicz)
         {
-
+            try
+            {
+                
+                alkoholScoreTextBox.Text = AlcoholCalculator.calculateAlcoholContent(alkoholComboBox.Text, capacityComboBox.Text, 1).ToString();
+                capacityScoreTextBox.Text = AlcoholCalculator.calculateDrinkkVolume(capacityComboBox.Text, 1).ToString();
+            }
+            catch (Exception ex) {
+            }
         }
 
         private void label1_Click(object sender, EventArgs e) {}
